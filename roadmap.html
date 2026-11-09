@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ciberseguridad Academy - Ruta de Aprendizaje</title>
+    <!-- Enlace a tu archivo de estilos general -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Contenedor general -->
+    <div class="contenedor-global">
+
+        <!-- Barra de redes sociales -->
+        <div class="barra-redes">
+            <a href="https://share.google/JlXQUpBnTalNUBArF" target="_blank">Twitter</a> | 
+            <a href="https://share.google/vdPWMLq9IDdBsSVJq" target="_blank">Discord</a> | 
+            <a href="https://github.com/" target="_blank">GitHub</a>
+        </div>
+        <!-- Cierra barra-redes -->
+
+        <!-- Encabezado del sitio -->
+		
+        <header class="encabezado">
+            <!-- Banner principal de Roadmap -->
+            <div class="banner-inicio">
+                <h1>Ruta de aprendizaje</h1>
+                <p>Tu camino paso a paso en ciberseguridad. Desde los fundamentos hasta el hacking web avanzado, con rutas adaptadas a cada certificación profesional.</p>
+            </div>
+			  <!-- Caja del slider principal superior -->
+            <div class="slider">
+                <link rel="stylesheet" type="text/css" href="jquery/jquery-ui.css">
+
+                <!-- Scripts jQuery y Jssor Slider -->
+                <script type="text/javascript" src="slider/js/jquery-1.9.1.min.js"></script>
+                <script type="text/javascript" src="slider/js/jssor.js"></script>
+                <script type="text/javascript" src="slider/js/jssor.slider.js"></script>
+
+                <script>
+                    jQuery(document).ready(function ($) {
+                        var _SlideshowTransitions = [
+                            {$Duration: 1200, x: -0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 },
+                            {$Duration: 1200, x: 0.3, $SlideOut: true, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+                        ];
+
+                        var options = {
+                            $AutoPlay: true,
+                            $FillMode: 2,
+                            $AutoPlaySteps: 1,
+                            $AutoPlayInterval: 4000,
+                            $PauseOnHover: 1,
+                            $ArrowKeyNavigation: true,
+                            $SlideDuration: 500,
+                            $MinDragOffsetToSlide: 20,
+                            $SlideSpacing: 0,
+                            $DisplayPieces: 1,
+                            $ParkingPosition: 0,
+                            $UISearchMode: 1,
+                            $PlayOrientation: 1,
+                            $DragOrientation: 3,
+
+                            $SlideshowOptions: {
+                                $Class: $JssorSlideshowRunner$,
+                                $Transitions: _SlideshowTransitions,
+                                $TransitionsOrder: 1,
+                                $ShowLink: true
+                            },
+
+                            $BulletNavigatorOptions: {
+                                $Class: $JssorBulletNavigator$,
+                                $ChanceToShow: 2,
+                                $Lanes: 1,
+                                $SpacingX: 10,
+                                $SpacingY: 10
+                            },
+
+                            $ArrowNavigatorOptions: {
+                                $Class: $JssorArrowNavigator$,
+                                $ChanceToShow: 2,
+                                $AutoCenter: 2
+                            }
+                        };
+
+                        var jssor_sliderb = new $JssorSlider$("sliderb_container", options);
+                    });
+                </script>
+
+                <!-- Slider Jssor Principal -->
+                <div id="sliderb_container" style="position: relative; top: 0px; left: 0px; width: 1000px; height: 400px; overflow: hidden; margin: 0 auto;">
+
+                    <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                        <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block; background-color: #000; top: 0px; left: 0px; width: 100%; height:100%;">
+                        </div>
+                        <div style="position: absolute; display: block; background: url(slider/img/loading.gif) no-repeat center center; top: 0px; left: 0px; width: 100%; height:100%;">
+                        </div>
+                    </div>
+
+                    <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1000px; height: 400px; overflow: hidden;">
+                        <div>
+                            <img u="image" src="img/img (22).jpg" alt="Banner 1" />
+                        </div>
+                        <div>
+                            <img u="image" src="img/img (21).jpg" alt="Banner 2" />
+                        </div>
+                        <div>
+                            <img u="image" src="img/img (9).jpg" alt="Banner 3" />
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <!-- Cierra slider principal -->
+        </header>
+        <!-- Cierra encabezado -->
+
+        <!-- Botonera o menú de navegación -->
+        <nav class="botonera">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Cierra botonera -->
+
+        <!-- Contenido principal -->
+        <main class="contenido-principal">
+
+            <h2 class="titulo-seccion-roadmap">RUTA COMPLETA</h2>
+
+            <!-- Contenedor de la Línea Temporal -->
+            <div class="timeline-contenedor">
+
+                <!-- Paso 1 (Izquierda) -->
+                <div class="paso-timeline izquierda">
+                    <div class="contenido-paso">
+                        <span class="badge-paso">Paso 1 🐧</span>
+                        <h3>Fundamentos</h3>
+                        <h4>Introducción a Linux</h4>
+                        <p>Domina el sistema operativo más usado en ciberseguridad. Desde lo básico hasta técnicas avanzadas.</p>
+                        <div class="meta-paso">⏱️ 15hs | 82 clases</div>
+                    </div>
+                </div>
+
+                <!-- Paso 2 (Derecha) -->
+                <div class="paso-timeline derecha">
+                    <div class="contenido-paso">
+                        <span class="badge-paso">Paso 2 🛠️</span>
+                        <h3>Personalización</h3>
+                        <h4>Personalización de entorno Linux</h4>
+                        <p>Crea tu entorno de trabajo perfecto. Configura y personaliza tu sistema Linux como un profesional.</p>
+                        <div class="meta-paso">⏱️ 3hs | 14 clases</div>
+                    </div>
+                </div>
+
+                <!-- Paso 3 (Izquierda) -->
+                <div class="paso-timeline izquierda">
+                    <div class="contenido-paso">
+                        <span class="badge-paso">Paso 3 ⚙️</span>
+                        <h3>Arch Linux</h3>
+                        <h4>Arch Linux desde Cero</h4>
+                        <p>Aprende a instalar y configurar Arch Linux desde cero, dominando cada paso del proceso para un sistema a medida.</p>
+                        <div class="meta-paso">⏱️ 1h 20min | 6 clases</div>
+                    </div>
+                </div>
+
+                <!-- Paso 4 (Derecha) -->
+                <div class="paso-timeline derecha">
+                    <div class="contenido-paso">
+                        <span class="badge-paso">Paso 4 📜</span>
+                        <h3>Scripting</h3>
+                        <h4>Scripting en Bash</h4>
+                        <p>Domina Bash desde fundamentos hasta scripting avanzado con paralelismo, networking ofensivo y automatización.</p>
+                        <div class="meta-paso">⏱️ 62hs | 51 clases</div>
+                    </div>
+                </div>
+
+                <!-- Paso 5 (Izquierda) -->
+                <div class="paso-timeline izquierda">
+                    <div class="contenido-paso">
+                        <span class="badge-paso">Paso 5 🐍</span>
+                        <h3>Programación</h3>
+                        <h4>Python Ofensivo</h4>
+                        <p>Aprende a desarrollar herramientas de hacking y automatización de ataques con Python desde cero.</p>
+                        <div class="meta-paso">⏱️ 35hs | 90 clases</div>
+                    </div>
+                </div>
+
+                <!-- Paso 6 (Derecha) -->
+                <div class="paso-timeline derecha">
+                    <div class="contenido-paso">
+                        <span class="badge-paso">Paso 6 🛡️</span>
+                        <h3>Hacking</h3>
+                        <h4>Introducción al Hacking</h4>
+                        <p>Tu primer paso en el mundo de la ciberseguridad. Aprende los fundamentos del hacking ético.</p>
+                        <div class="meta-paso">⏱️ 53hs | 124 clases</div>
+                    </div>
+                </div>
+
+                <!-- Paso 7 (Izquierda - Final) -->
+                <div class="paso-timeline izquierda">
+                    <div class="contenido-paso especial-avanzado">
+                        <span class="badge-paso" style="background-color: #00ff66; color: #000;">Paso 7 🌐</span>
+                        <h3>Hacking Web</h3>
+                        <h4>Curso de Hacking Web</h4>
+                        <p>Domina el hacking web con 51 horas de práctica real, 269 laboratorios y más de 30 vulnerabilidades modernas.</p>
+                        <div class="meta-paso">⏱️ 52hs | 300 clases</div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Cierra timeline-contenedor -->
+
+        </main>
+        <!-- Cierra contenido-principal -->
+
+        <!-- Pie de página -->
+        <footer class="pie-pagina">
+            <p>&copy; 2026 - Trabajo Final Diseño II | Ciberseguridad Academy</p>
+        </footer>
+
+    </div>
+    <!-- Cierra contenedor-global -->
+
+</body>
+</html>

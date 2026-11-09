@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ciberseguridad Academy - Catálogo de Cursos</title>
+    <!-- Enlace a tu archivo de estilos general -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Contenedor general -->
+    <div class="contenedor-global">
+
+        <!-- Barra de redes sociales -->
+        <div class="barra-redes">
+            <a href="https://share.google/JlXQUpBnTalNUBArF" target="_blank">Twitter</a> | 
+            <a href="https://share.google/vdPWMLq9IDdBsSVJq" target="_blank">Discord</a> | 
+            <a href="https://github.com/" target="_blank">GitHub</a>
+        </div>
+        <!-- Cierra barra-redes -->
+
+        <!-- Encabezado del sitio -->
+        <header class="encabezado">
+
+            <!-- Banner principal de Cursos -->
+            <div class="banner-inicio">
+                <h1>Catálogo de Cursos</h1>
+                <p>Explora nuestra colección de cursos de ciberseguridad y hacking ético. Desde principiante hasta nivel avanzado.</p>
+            </div>
+			<!-- Caja del slider principal superior -->
+            <div class="slider">
+                <link rel="stylesheet" type="text/css" href="jquery/jquery-ui.css">
+
+                <!-- Scripts jQuery y Jssor Slider -->
+                <script type="text/javascript" src="slider/js/jquery-1.9.1.min.js"></script>
+                <script type="text/javascript" src="slider/js/jssor.js"></script>
+                <script type="text/javascript" src="slider/js/jssor.slider.js"></script>
+
+                <script>
+                    jQuery(document).ready(function ($) {
+                        var _SlideshowTransitions = [
+                            {$Duration: 1200, x: -0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 },
+                            {$Duration: 1200, x: 0.3, $SlideOut: true, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+                        ];
+
+                        var options = {
+                            $AutoPlay: true,
+                            $FillMode: 2,
+                            $AutoPlaySteps: 1,
+                            $AutoPlayInterval: 4000,
+                            $PauseOnHover: 1,
+                            $ArrowKeyNavigation: true,
+                            $SlideDuration: 500,
+                            $MinDragOffsetToSlide: 20,
+                            $SlideSpacing: 0,
+                            $DisplayPieces: 1,
+                            $ParkingPosition: 0,
+                            $UISearchMode: 1,
+                            $PlayOrientation: 1,
+                            $DragOrientation: 3,
+
+                            $SlideshowOptions: {
+                                $Class: $JssorSlideshowRunner$,
+                                $Transitions: _SlideshowTransitions,
+                                $TransitionsOrder: 1,
+                                $ShowLink: true
+                            },
+
+                            $BulletNavigatorOptions: {
+                                $Class: $JssorBulletNavigator$,
+                                $ChanceToShow: 2,
+                                $Lanes: 1,
+                                $SpacingX: 10,
+                                $SpacingY: 10
+                            },
+
+                            $ArrowNavigatorOptions: {
+                                $Class: $JssorArrowNavigator$,
+                                $ChanceToShow: 2,
+                                $AutoCenter: 2
+                            }
+                        };
+
+                        var jssor_sliderb = new $JssorSlider$("sliderb_container", options);
+                    });
+                </script>
+
+                <!-- Slider Jssor Principal -->
+                <div id="sliderb_container" style="position: relative; top: 0px; left: 0px; width: 1000px; height: 400px; overflow: hidden; margin: 0 auto;">
+
+                    <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                        <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block; background-color: #000; top: 0px; left: 0px; width: 100%; height:100%;">
+                        </div>
+                        <div style="position: absolute; display: block; background: url(slider/img/loading.gif) no-repeat center center; top: 0px; left: 0px; width: 100%; height:100%;">
+                        </div>
+                    </div>
+
+                    <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1000px; height: 400px; overflow: hidden;">
+                        <div>
+                           <img u="image" src="img/img (20).jpg" alt="Banner 1" /> />
+                        </div>
+                        <div>
+                            <img u="image" src="img/img (14).jpg" alt="Banner 2" />
+                        </div>
+                        <div>
+                            <img u="image" src="img/img (6).jpg" alt="Banner 3" />
+                        </div>
+						<div>
+                            <img u="image" src="img/img (19).jpg" alt="Banner 4" />
+                        </div>
+						
+                    </div>
+                    
+                </div>
+
+            </div>
+            <!-- Cierra slider principal -->
+        </header>
+        <!-- Cierra encabezado -->
+
+        <!-- Botonera o menú de navegación -->
+        <nav class="botonera">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Cierra botonera -->
+
+        <!-- Contenido principal -->
+        <main class="contenido-principal">
+
+            <!-- Sección de Filtros y Buscador -->
+            <div class="contenedor-filtros">
+                <input type="text" id="buscador-cursos" class="input-buscador" placeholder="Buscar curso de ciberseguridad...">
+                <div class="botones-filtro">
+                    <button class="btn-filtro activo" data-filtro="todos">Todos</button>
+                    <button class="btn-filtro" data-filtro="principiante">Principiante</button>
+                    <button class="btn-filtro" data-filtro="intermedio">Intermedio</button>
+                    <button class="btn-filtro" data-filtro="avanzado">Avanzado</button>
+                </div>
+            </div>
+            <!-- Cierra contenedor-filtros -->
+
+            <!-- Grid de Cursos -->
+            <div class="grid-cursos">
+
+                <!-- NIVEL PRINCIPIANTE -->
+
+                <!-- Curso 1 -->
+                <div class="tarjeta-curso" data-categoria="principiante">
+                    <div class="miniatura-curso">
+                        <img src="img/img (11).jpg" alt="Introducción a Linux">
+                        <span class="badge-nivel">Principiante</span>
+                    </div>
+                    <div class="info-curso">
+                        <h3>Introducción a Linux</h3>
+                        <p>Domina el sistema operativo más usado en ciberseguridad. Desde lo básico hasta técnicas avanzadas.</p>
+                        <div class="detalles-curso">
+                            <span>⏱️ Duración: 15hs (82 clases)</span>
+                            <span class="rating">⭐ 5.0</span>
+                        </div>
+                        <a href="#" class="btn-ver-curso">Ver curso</a>
+                    </div>
+                </div>
+
+                <!-- Curso 2 -->
+                <div class="tarjeta-curso" data-categoria="principiante">
+                    <div class="miniatura-curso">
+                        <img src="img/img (12).jpg" alt="Personalización de Linux">
+                        <span class="badge-nivel">Principiante</span>
+                    </div>
+                    <div class="info-curso">
+                        <h3>Personalización de Linux</h3>
+                        <p>Crea tu entorno de trabajo perfecto. Configura y personaliza tu sistema Linux como un profesional.</p>
+                        <div class="detalles-curso">
+                            <span>⏱️ Duración: 3hs (14 clases)</span>
+                            <span class="rating">⭐ 5.0</span>
+                        </div>
+                        <a href="#" class="btn-ver-curso">Ver curso</a>
+                    </div>
+                </div>
+
+                <!-- Curso 3 -->
+                <div class="tarjeta-curso" data-categoria="principiante">
+                    <div class="miniatura-curso">
+                        <img src="img/img (14).jpg" alt="Arch Linux desde Cero">
+                        <span class="badge-nivel">Principiante</span>
+                    </div>
+                    <div class="info-curso">
+                        <h3>Arch Linux desde Cero</h3>
+                        <p>Aprende a instalar y configurar Arch Linux desde cero, dominando cada paso del proceso para tener un sistema totalmente personalizado.</p>
+                        <div class="detalles-curso">
+                            <span>⏱️ Duración: 1h 20min (6 clases)</span>
+                            <span class="rating">⭐ 5.0</span>
+                        </div>
+                        <a href="#" class="btn-ver-curso">Ver curso</a>
+                    </div>
+                </div>
+
+                <!-- NIVEL INTERMEDIO -->
+
+                <!-- Curso 4 -->
+                <div class="tarjeta-curso" data-categoria="intermedio">
+                    <div class="miniatura-curso">
+                        <img src="img/img (5).jpg" alt="Scripting en Bash">
+                        <span class="badge-nivel" style="background-color: #ff007f; color: #ffffff;">Intermedio</span>
+                    </div>
+                    <div class="info-curso">
+                        <h3>Scripting en Bash</h3>
+                        <p>Domina Bash desde los fundamentos hasta scripting avanzado con paralelismo, networking ofensivo y automatización de herramientas de hacking.</p>
+                        <div class="detalles-curso">
+                            <span>⏱️ Duración: 62hs (51 clases)</span>
+                            <span class="rating">⭐ 5.0</span>
+                        </div>
+                        <a href="#" class="btn-ver-curso">Ver curso</a>
+                    </div>
+                </div>
+
+                <!-- Curso 5 -->
+                <div class="tarjeta-curso" data-categoria="intermedio">
+                    <div class="miniatura-curso">
+                        <img src="img/img (18).jpg" alt="Python Ofensivo">
+                        <span class="badge-nivel" style="background-color: #ff007f; color: #ffffff;">Intermedio</span>
+                    </div>
+                    <div class="info-curso">
+                        <h3>Python Ofensivo</h3>
+                        <p>Aprende a desarrollar herramientas de hacking y automatización de ataques con Python desde cero.</p>
+                        <div class="detalles-curso">
+                            <span>⏱️ Duración: 35hs (90 clases)</span>
+                            <span class="rating">⭐ 5.0</span>
+                        </div>
+                        <a href="#" class="btn-ver-curso">Ver curso</a>
+                    </div>
+                </div>
+
+                <!-- Curso 6 -->
+                <div class="tarjeta-curso" data-categoria="intermedio">
+                    <div class="miniatura-curso">
+                        <img src="img/img (13).jpg" alt="Introducción al Hacking">
+                        <span class="badge-nivel" style="background-color: #ff007f; color: #ffffff;">Intermedio</span>
+                    </div>
+                    <div class="info-curso">
+                        <h3>Introducción al Hacking</h3>
+                        <p>Tu primer paso en el mundo de la ciberseguridad. Aprende los fundamentos del hacking ético.</p>
+                        <div class="detalles-curso">
+                            <span>⏱️ Duración: 53hs (124 clases)</span>
+                            <span class="rating">⭐ 5.0</span>
+                        </div>
+                        <a href="#" class="btn-ver-curso">Ver curso</a>
+                    </div>
+                </div>
+
+                <!-- NIVEL AVANZADO -->
+
+                <!-- Curso 7 -->
+                <div class="tarjeta-curso" data-categoria="avanzado">
+                    <div class="miniatura-curso">
+                        <img src="img/img (16).jpg" alt="Hacking Web">
+                        <span class="badge-nivel" style="background-color: #00ff66; color: #000000;">Avanzado</span>
+                    </div>
+                    <div class="info-curso">
+                        <h3>Hacking Web</h3>
+                        <p>Domina el hacking web con 51 horas de práctica real, 269 laboratorios y más de 30 vulnerabilidades modernas.</p>
+                        <div class="detalles-curso">
+                            <span>⏱️ Duración: 52hs (300 clases)</span>
+                            <span class="rating">⭐ 5.0</span>
+                        </div>
+                        <a href="#" class="btn-ver-curso">Ver curso</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Cierra grid-cursos -->
+
+        </main>
+        <!-- Cierra contenido-principal -->
+
+        <!-- Pie de página -->
+        <footer class="pie-pagina">
+            <p>&copy; 2026 - Trabajo Final Diseño II | Ciberseguridad Academy</p>
+        </footer>
+
+    </div>
+    <!-- Cierra contenedor-global -->
+
+    <!-- Script JavaScript para los filtros y el buscador interactivo -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const botonesFiltro = document.querySelectorAll(".btn-filtro");
+            const tarjetasCurso = document.querySelectorAll(".tarjeta-curso");
+            const inputBuscador = document.getElementById("buscador-cursos");
+
+            // Funcionalidad de filtrado por categoría (Botones)
+            botonesFiltro.forEach(boton => {
+                boton.addEventListener("click", () => {
+                    // Remover clase activo de todos los botones y ponérsela al clickeado
+                    botonesFiltro.forEach(btn => btn.classList.remove("activo"));
+                    boton.classList.add("activo");
+
+                    const filtro = boton.getAttribute("data-filtro");
+
+                    tarjetasCurso.forEach(tarjeta => {
+                        const categoria = tarjeta.getAttribute("data-categoria");
+                        if (filtro === "todos" || categoria === filtro) {
+                            tarjeta.style.display = "flex";
+                        } else {
+                            tarjeta.style.display = "none";
+                        }
+                    });
+                });
+            });
+
+            // Funcionalidad del buscador por texto en tiempo real
+            inputBuscador.addEventListener("input", (e) => {
+                const textoBusqueda = e.target.value.toLowerCase();
+
+                tarjetasCurso.forEach(tarjeta => {
+                    const titulo = tarjeta.querySelector("h3").textContent.toLowerCase();
+                    const descripcion = tarjeta.querySelector("p").textContent.toLowerCase();
+
+                    if (titulo.includes(textoBusqueda) || descripcion.includes(textoBusqueda)) {
+                        tarjeta.style.display = "flex";
+                    } else {
+                        tarjeta.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

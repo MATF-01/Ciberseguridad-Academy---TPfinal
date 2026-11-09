@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ciberseguridad Academy - Nosotros</title>
+    
+    <!-- Estilos generales del sitio -->
+    <link rel="stylesheet" href="estilos.css">
+    
+    <!-- Estilos oficiales de jQuery UI desde CDN (Carga segura) -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+<body>
+
+    <!-- Contenedor general -->
+    <div class="contenedor-global">
+
+        <!-- Barra de redes sociales -->
+        <div class="barra-redes">
+            <a href="https://share.google/JlXQUpBnTalNUBArF" target="_blank">Twitter</a> | 
+            <a href="https://share.google/vdPWMLq9IDdBsSVJq" target="_blank">Discord</a> | 
+            <a href="https://github.com/" target="_blank">GitHub</a>
+        </div>
+        <!-- Cierra barra-redes -->
+
+        <!-- Encabezado del sitio -->
+        <header class="encabezado">
+            <div class="banner-inicio">
+                <h1>Conócenos</h1>
+                <p>Descubre quiénes somos, nuestra misión y las personas que hacen posible a Ciberseguridad Academy.</p>
+            </div>
+			
+			<!-- Caja del slider principal superior -->
+            <div class="slider">
+                <link rel="stylesheet" type="text/css" href="jquery/jquery-ui.css">
+
+                <!-- Scripts jQuery y Jssor Slider -->
+                <script type="text/javascript" src="slider/js/jquery-1.9.1.min.js"></script>
+                <script type="text/javascript" src="slider/js/jssor.js"></script>
+                <script type="text/javascript" src="slider/js/jssor.slider.js"></script>
+
+                <script>
+                    jQuery(document).ready(function ($) {
+                        var _SlideshowTransitions = [
+                            {$Duration: 1200, x: -0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 },
+                            {$Duration: 1200, x: 0.3, $SlideOut: true, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+                        ];
+
+                        var options = {
+                            $AutoPlay: true,
+                            $FillMode: 2,
+                            $AutoPlaySteps: 1,
+                            $AutoPlayInterval: 4000,
+                            $PauseOnHover: 1,
+                            $ArrowKeyNavigation: true,
+                            $SlideDuration: 500,
+                            $MinDragOffsetToSlide: 20,
+                            $SlideSpacing: 0,
+                            $DisplayPieces: 1,
+                            $ParkingPosition: 0,
+                            $UISearchMode: 1,
+                            $PlayOrientation: 1,
+                            $DragOrientation: 3,
+
+                            $SlideshowOptions: {
+                                $Class: $JssorSlideshowRunner$,
+                                $Transitions: _SlideshowTransitions,
+                                $TransitionsOrder: 1,
+                                $ShowLink: true
+                            },
+
+                            $BulletNavigatorOptions: {
+                                $Class: $JssorBulletNavigator$,
+                                $ChanceToShow: 2,
+                                $Lanes: 1,
+                                $SpacingX: 10,
+                                $SpacingY: 10
+                            },
+
+                            $ArrowNavigatorOptions: {
+                                $Class: $JssorArrowNavigator$,
+                                $ChanceToShow: 2,
+                                $AutoCenter: 2
+                            }
+                        };
+
+                        var jssor_sliderb = new $JssorSlider$("sliderb_container", options);
+                    });
+                </script>
+
+                <!-- Slider Jssor Principal -->
+                <div id="sliderb_container" style="position: relative; top: 0px; left: 0px; width: 1000px; height: 400px; overflow: hidden; margin: 0 auto;">
+
+                    <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                        <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block; background-color: #000; top: 0px; left: 0px; width: 100%; height:100%;">
+                        </div>
+                        <div style="position: absolute; display: block; background: url(slider/img/loading.gif) no-repeat center center; top: 0px; left: 0px; width: 100%; height:100%;">
+                        </div>
+                    </div>
+
+                    <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1000px; height: 400px; overflow: hidden;">
+                        <div>
+                            <img u="image" src="img/img (10).jpg" alt="Banner 1" />
+                        </div>
+                        <div>
+                            <img u="image" src="img/img (14).jpg" alt="Banner 2" />
+                        </div>
+                        <div>
+                            <img u="image" src="img/img (6).jpg" alt="Banner 3" />
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <!-- Cierra slider principal -->
+        </header>
+        <!-- Cierra encabezado -->
+
+        <!-- Botonera o menú de navegación -->
+        <nav class="botonera">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Cierra botonera -->
+
+        <!-- Contenido principal -->
+        <main class="contenido-principal">
+
+            <!-- Acordeón interactivo -->
+            <div id="acordeon-nosotros">
+                
+                <!-- Sección 1 -->
+                <h3>¿Qué es Ciberseguridad Academy?</h3>
+                <div>
+                    <p>Somos un espacio de formación técnica especializado en ciberseguridad ofensiva, diseñado para llevarte desde los conceptos iniciales hasta el dominio profesional. Nuestra metodología combina teoría aplicada y laboratorios reales para que adquieras las competencias más demandadas por la industria actual. El proyecto nace con el firme propósito de democratizar el acceso al hacking ético, brindando una ruta guiada tanto para principiantes que dan sus primeros pasos como para profesionales avanzados que buscan especializarse.</p>
+                </div>
+
+                <!-- Sección 2 -->
+                <h3>¿Quiénes conforman esta academia?</h3>
+                <div>
+                    <p>Actualmente, el proyecto es impulsado y desarrollado de manera integral por un especialista en informática y educación tecnológica, combinando la pasión por la enseñanza con la auditoría de sistemas y el desarrollo de software seguro.</p>
+                </div>
+
+                <!-- Sección 3 -->
+                <h3>Certificaciones Profesionales</h3>
+                <div>
+                    <p>Nuestros trayectos formativos están alineados y orientados a preparar los exámenes para las acreditaciones internacionales más reconocidas del sector:</p>
+                    <ul class="lista-certificaciones" style="margin-top: 10px; list-style: none;">
+                        <li>🛡️ <strong>eJPT</strong> (Junior Penetration Tester)</li>
+                        <li>🔐 <strong>OSCP</strong> (Offensive Security Certified Professional)</li>
+                        <li>🌐 <strong>OSWE</strong> (Offensive Security Web Expert)</li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- Cierra acordeón -->
+
+            <!-- Caja de Métricas y Estadísticas -->
+            <div class="grid-metricas">
+                <div class="tarjeta-metrica">
+                    <span class="numero-metrica">+100k</span>
+                    <span class="texto-metrica">Estudiantes en comunidad</span>
+                </div>
+                <div class="tarjeta-metrica">
+                    <span class="numero-metrica">+1.000</span>
+                    <span class="texto-metrica">Estudiantes activos</span>
+                </div>
+                <div class="tarjeta-metrica">
+                    <span class="numero-metrica">+80</span>
+                    <span class="texto-metrica">Laboratorios prácticos</span>
+                </div>
+            </div>
+
+        </main>
+        <!-- Cierra contenido-principal -->
+
+        <!-- Pie de página -->
+        <footer class="pie-pagina">
+            <p>&copy; 2026 - Trabajo Final Diseño II | Ciberseguridad Academy</p>
+        </footer>
+
+    </div>
+    <!-- Cierra contenedor-global -->
+
+    <!-- SCRIPTS DE JQUERY Y JQUERY UI DESDE CDN OFICIAL -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $("#acordeon-nosotros").accordion({
+                collapsible: true,
+                active: false,
+                heightStyle: "content"
+            });
+        });
+    </script>
+
+</body>
+</html>

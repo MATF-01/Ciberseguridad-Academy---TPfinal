@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ciberseguridad Academy - Contacto y Suscripciones</title>
+    
+    <!-- Enlaces a los estilos del sitio y de jQuery UI  -->
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+</head>
+<body>
+
+    <!-- Contenedor general -->
+    <div class="contenedor-global">
+
+        <!-- Barra de redes sociales -->
+        <div class="barra-redes">
+            <a href="https://share.google/JlXQUpBnTalNUBArF" target="_blank">Twitter</a> | 
+            <a href="https://share.google/vdPWMLq9IDdBsSVJq" target="_blank">Discord</a> | 
+            <a href="https://github.com/" target="_blank">GitHub</a>
+        </div>
+        <!-- Cierra barra-redes -->
+
+        <!-- Encabezado del sitio -->
+        <header class="encabezado">
+            <!-- Banner principal de Contacto y Suscripciones -->
+            <div class="banner-inicio">
+                <h1>Elige tu suscripción</h1>
+                <p>Un solo acceso a todos los cursos, +650 clases y la comunidad de Ciberseguridad Academy. Sin permanencia, cancela cuando quieras.</p>
+            </div>
+			
+			<!-- Caja del slider principal superior -->
+            <div class="slider">
+                <link rel="stylesheet" type="text/css" href="jquery/jquery-ui.css">
+
+                <!-- Scripts jQuery y Jssor Slider -->
+                <script type="text/javascript" src="slider/js/jquery-1.9.1.min.js"></script>
+                <script type="text/javascript" src="slider/js/jssor.js"></script>
+                <script type="text/javascript" src="slider/js/jssor.slider.js"></script>
+
+                <script>
+                    jQuery(document).ready(function ($) {
+                        var _SlideshowTransitions = [
+                            {$Duration: 1200, x: -0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 },
+                            {$Duration: 1200, x: 0.3, $SlideOut: true, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+                        ];
+
+                        var options = {
+                            $AutoPlay: true,
+                            $FillMode: 2,
+                            $AutoPlaySteps: 1,
+                            $AutoPlayInterval: 4000,
+                            $PauseOnHover: 1,
+                            $ArrowKeyNavigation: true,
+                            $SlideDuration: 500,
+                            $MinDragOffsetToSlide: 20,
+                            $SlideSpacing: 0,
+                            $DisplayPieces: 1,
+                            $ParkingPosition: 0,
+                            $UISearchMode: 1,
+                            $PlayOrientation: 1,
+                            $DragOrientation: 3,
+
+                            $SlideshowOptions: {
+                                $Class: $JssorSlideshowRunner$,
+                                $Transitions: _SlideshowTransitions,
+                                $TransitionsOrder: 1,
+                                $ShowLink: true
+                            },
+
+                            $BulletNavigatorOptions: {
+                                $Class: $JssorBulletNavigator$,
+                                $ChanceToShow: 2,
+                                $Lanes: 1,
+                                $SpacingX: 10,
+                                $SpacingY: 10
+                            },
+
+                            $ArrowNavigatorOptions: {
+                                $Class: $JssorArrowNavigator$,
+                                $ChanceToShow: 2,
+                                $AutoCenter: 2
+                            }
+                        };
+
+                        var jssor_sliderb = new $JssorSlider$("sliderb_container", options);
+                    });
+                </script>
+
+                <!-- Slider Jssor Principal -->
+                <div id="sliderb_container" style="position: relative; top: 0px; left: 0px; width: 1000px; height: 400px; overflow: hidden; margin: 0 auto;">
+
+                    <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                        <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block; background-color: #000; top: 0px; left: 0px; width: 100%; height:100%;">
+                        </div>
+                        <div style="position: absolute; display: block; background: url(slider/img/loading.gif) no-repeat center center; top: 0px; left: 0px; width: 100%; height:100%;">
+                        </div>
+                    </div>
+
+                    <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1000px; height: 400px; overflow: hidden;">
+                        <div>
+                            <img u="image" src="img/img (19).jpg" alt="Banner 1" />
+                        </div>
+                        <div>
+                            <img u="image" src="img/img (14).jpg" alt="Banner 2" />
+                        </div>
+                        <div>
+                            <img u="image" src="img/img (6).jpg" alt="Banner 3" />
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <!-- Cierra slider principal -->
+        </header>
+        <!-- Cierra encabezado -->
+
+        <!-- Botonera o menú de navegación -->
+        <nav class="botonera">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">cursos</a></li>
+                <li><a href="roadmap.html">Roadmap</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Cierra botonera -->
+
+        <!-- Contenido principal -->
+        <main class="contenido-principal">
+
+            <!-- SECCIÓN DE TABS (PESTAÑAS) PARA LAS SUSCRIPCIONES -->
+            <div id="tabs-suscripciones" class="seccion-tabs">
+                <ul>
+                    <li><a href="#tab-mensual">Mensual</a></li>
+                    <li><a href="#tab-trimestral">Trimestral</a></li>
+                    <li><a href="#tab-anual">Anual</a></li>
+                </ul>
+
+                <!-- Suscripción Mensual -->
+                <div id="tab-mensual" class="contenido-tab">
+                    <h3>Suscripción Mensual</h3>
+                    <p class="precio-suscripcion">$14,99 / mes</p>
+                    <ul class="beneficios-suscripcion">
+                        <li>✔️ Acceso completo a todos los cursos</li>
+                        <li>✔️ Canales exclusivos de Discord</li>
+                        <li>✔️ Apuntes interactivos por curso</li>
+                        <li>✔️ Soporte técnico</li>
+                    </ul>
+                </div>
+
+                <!-- Suscripción Trimestral -->
+                <div id="tab-trimestral" class="contenido-tab">
+                    <h3>Suscripción Trimestral</h3>
+                    <p class="precio-suscripcion">$40,99 / mes <span class="ahorro">(Ahorras $3,98 frente al mensual)</span></p>
+                    <ul class="beneficios-suscripcion">
+                        <li>✔️ Acceso completo a todos los cursos</li>
+                        <li>✔️ Canales de Discord exclusivos</li>
+                        <li>✔️ Apuntes interactivos por curso</li>
+                        <li>✔️ Reuniones grupales de dudas</li>
+                        <li>✔️ Canales de voz privados</li>
+                        <li>✔️ Soporte prioritario</li>
+                    </ul>
+                </div>
+
+                <!-- Suscripción Anual -->
+                <div id="tab-anual" class="contenido-tab">
+                    <h3>Suscripción Anual</h3>
+                    <p class="precio-suscripcion">$150,99 <span class="ahorro">(Ahorras $28,89 frente al trimestral)</span></p>
+                    <ul class="beneficios-suscripcion">
+                        <li>✔️ Acceso completo a todos los cursos</li>
+                        <li>✔️ Canales exclusivos de Discord</li>
+                        <li>✔️ Apuntes interactivos por curso</li>
+                        <li>✔️ Reuniones grupales de dudas</li>
+                        <li>✔️ Canales de voz privados</li>
+                        <li>✔️ Sesiones 1 a 1 exclusivas</li>
+                        <li>✔️ Soporte 24/7 y prioritario</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Cierra tabs -->
+
+            <!-- SECCIÓN DE FORMULARIO DE CONTACTO -->
+            <div class="contenedor-formulario">
+                <h2>Formulario de Inscripción y Contacto</h2>
+                <p>Completa tus datos para suscribirte o hacernos una consulta directa.</p>
+
+                <form action="mailto:matiasfiusa@gmail.com" method="post" enctype="text/plain" class="formulario-contacto">
+                    
+                    <div class="grupo-campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="Nombre" required placeholder="Tu nombre...">
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="Apellido" required placeholder="Tu apellido...">
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="telefono">Número de teléfono:</label>
+                        <input type="tel" id="telefono" name="Telefono" placeholder="Ej: +54 9 11...">
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="Email" required placeholder="tucorreo@email.com">
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="suscripcion-elegida">Selecciona tu suscripción de interés:</label>
+                        <select id="suscripcion-elegida" name="Suscripcion" class="select-estilo">
+                            <option value="Mensual">Suscripción Mensual ($14,99/mes)</option>
+                            <option value="Trimestral">Suscripción Trimestral ($40,99/mes)</option>
+                            <option value="Anual">Suscripción Anual ($150,99)</option>
+                            <option value="Consulta General">Solo consulta general</option>
+                        </select>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="mensaje">Mensaje en particular:</label>
+                        <textarea id="mensaje" name="Mensaje" rows="4" placeholder="Escribe tu consulta o mensaje aquí..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar a Ciberseguridad Academy</button>
+
+                </form>
+            </div>
+            <!-- Cierra contenedor-formulario -->
+
+        </main>
+        <!-- Cierra contenido-principal -->
+
+        <!-- Pie de página -->
+        <footer class="pie-pagina">
+            <p>&copy; 2026 - Trabajo Final Diseño II | Ciberseguridad Academy</p>
+        </footer>
+
+    </div>
+    <!-- Cierra contenedor-global -->
+
+    <!-- SCRIPTS DE JQUERY Y JQUERY UI PARA ACTIVAR LAS TABS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            // Inicializar las pestañas (Tabs) de jQuery UI
+            $("#tabs-suscripciones").tabs();
+        });
+    </script>
+
+</body>
+</html>
